@@ -27,7 +27,7 @@ control if LIRC is installed.
 
 %description -l pl
 fftv to program do ogl±dania telewizji dzia³aj±cy z kartami
-telewizyjnymi i systmem Video for Linux. Ma tak¿e interfejs
+telewizyjnymi i systemem Video for Linux. Ma tak¿e interfejs
 u¿ytkownika do radia. Obs³uguje nagrywanie w ró¿nych formatach i
 kodekach z MPEG, AVI i Ogg w³±cznie. Obs³uguje pilota je¶li
 zainstalowany jest LIRC.
