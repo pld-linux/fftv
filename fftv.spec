@@ -4,13 +4,13 @@
 Summary:	GNOME TV viewer
 Summary(pl):	Program do ogl±dania TV dla GNOME
 Name:		fftv
-Version:	0.6.0
+Version:	0.8.2
 Release:	1
 License:	GPL
 Group:		X11/Applications/Multimedia
 Source0:	http://dl.sourceforge.net/fftv/%{name}-%{version}.tar.bz2
-# Source0-md5:	1703c5f37f1512d1c0c81a22b4caffc6
-Patch0:		%{name}-pkg.patch
+# Source0-md5:	07749106e864fcf549e199d5a347f95a
+Patch0:		%{name}-DESTDIR.patch
 URL:		http://fftv.sourceforge.net/
 BuildRequires:	SDL-devel
 BuildRequires:	freetype-devel
