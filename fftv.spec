@@ -8,7 +8,7 @@ Version:	0.6.0
 Release:	1
 License:	GPL
 Group:		X11/Applications/Multimedia
-Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
+Source0:	http://dl.sourceforge.net/fftv/%{name}-%{version}.tar.bz2
 # Source0-md5:	1703c5f37f1512d1c0c81a22b4caffc6
 Patch0:		%{name}-pkg.patch
 URL:		http://fftv.sourceforge.net/
