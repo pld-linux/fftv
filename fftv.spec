@@ -57,9 +57,7 @@ zainstalowany jest LIRC.
 rm -rf $RPM_BUILD_ROOT
 
 %makeinstall \
-	DESTDIR=$RPM_BUILD_ROOT \
-	prefix=$RPM_BUILD_ROOT%{_prefix} \
-	MANDIR=$RPM_BUILD_ROOT%{_mandir}
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
