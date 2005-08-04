@@ -4,17 +4,20 @@
 Summary:	GNOME TV viewer
 Summary(pl):	Program do ogl±dania TV dla GNOME
 Name:		fftv
-Version:	0.6.0
+Version:	0.8.2
 Release:	1
 License:	GPL
 Group:		X11/Applications/Multimedia
 Source0:	http://dl.sourceforge.net/fftv/%{name}-%{version}.tar.bz2
-# Source0-md5:	1703c5f37f1512d1c0c81a22b4caffc6
-Patch0:		%{name}-pkg.patch
+# Source0-md5:	07749106e864fcf549e199d5a347f95a
+#Patch0:		%{name}-pkg.patch
+#cvs server: nothing known about fftv-pkg.patch
 URL:		http://fftv.sourceforge.net/
 BuildRequires:	SDL-devel
+BuildRequires:	faac-devel
 BuildRequires:	freetype-devel
 BuildRequires:	gtk+2-devel
+BuildRequires:	lame-libs-devel	
 BuildRequires:	libvorbis-devel
 BuildRequires:	zlib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -34,18 +37,29 @@ zainstalowany jest LIRC.
 
 %prep
 %setup -q
-%patch0 -p1
+#%patch0 -p1
 
 %build
-%configure
+%configure \
+	--enable-mp3lame \
+	--enable-vorbis \
+	--enable-faad \
+	--enable-faadbin \
+	--enable-faac \
+	--enable-a52 \
+	--enable-pp \
+	--enable-gpl
+
 %{__make} \
 	CC="%{__cc}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT
+%makeinstall \
+	DESTDIR=$RPM_BUILD_ROOT \
+	prefix=$RPM_BUILD_ROOT%{_prefix} \
+	MANDIR=$RPM_BUILD_ROOT%{_mandir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -53,3 +67,9 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/*
+%{_iconsdir}/%{name}
+%{_iconsdir}/%{name}.png
+%{_libdir}/%{name}
+%{_libdir}/menu/*
+%{_libdir}/vhook/*.so
+%{_mandir}/man1/*.1.*
