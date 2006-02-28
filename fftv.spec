@@ -11,14 +11,14 @@ License:	GPL
 Group:		X11/Applications/Multimedia
 Source0:	http://dl.sourceforge.net/fftv/%{name}-%{version}.tar.bz2
 # Source0-md5:	07749106e864fcf549e199d5a347f95a
-#Patch0:		%{name}-pkg.patch
 #cvs server: nothing known about fftv-pkg.patch
+#Patch0:	%{name}-pkg.patch
 URL:		http://fftv.sourceforge.net/
 BuildRequires:	SDL-devel
 BuildRequires:	faac-devel
 BuildRequires:	freetype-devel
 BuildRequires:	gtk+2-devel
-BuildRequires:	lame-libs-devel	
+BuildRequires:	lame-libs-devel
 BuildRequires:	libvorbis-devel
 BuildRequires:	zlib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
