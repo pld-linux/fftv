@@ -70,4 +70,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/%{name}
 %{_libdir}/menu/*
 %{_libdir}/vhook/*.so
-%{_mandir}/man1/*.1.*
+%{_mandir}/man1/*.1*
