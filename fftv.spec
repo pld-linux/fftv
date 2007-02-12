@@ -3,7 +3,7 @@
 #	- enable support for all possible features
 #	- external ffmpeg
 Summary:	GNOME TV viewer
-Summary(pl):	Program do ogl±dania TV dla GNOME
+Summary(pl.UTF-8):   Program do oglƒÖdania TV dla GNOME
 Name:		fftv
 Version:	0.8.2
 Release:	1
@@ -29,11 +29,11 @@ features a radio user interface. It can support recording of various
 formats and codecs including MPEG, AVI, and Ogg. It supports remote
 control if LIRC is installed.
 
-%description -l pl
-fftv to program do ogl±dania telewizji dzia≥aj±cy z kartami
-telewizyjnymi i systemem Video for Linux. Ma takøe interfejs
-uøytkownika do radia. Obs≥uguje nagrywanie w rÛønych formatach i
-kodekach z MPEG, AVI i Ogg w≥±cznie. Obs≥uguje pilota je∂li
+%description -l pl.UTF-8
+fftv to program do oglƒÖdania telewizji dzia≈ÇajƒÖcy z kartami
+telewizyjnymi i systemem Video for Linux. Ma tak≈ºe interfejs
+u≈ºytkownika do radia. Obs≈Çuguje nagrywanie w r√≥≈ºnych formatach i
+kodekach z MPEG, AVI i Ogg w≈ÇƒÖcznie. Obs≈Çuguje pilota je≈õli
 zainstalowany jest LIRC.
 
 %prep
