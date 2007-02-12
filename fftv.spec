@@ -3,7 +3,7 @@
 #	- enable support for all possible features
 #	- external ffmpeg
 Summary:	GNOME TV viewer
-Summary(pl.UTF-8):   Program do oglądania TV dla GNOME
+Summary(pl.UTF-8):	Program do oglądania TV dla GNOME
 Name:		fftv
 Version:	0.8.2
 Release:	1
