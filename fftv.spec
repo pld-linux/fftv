@@ -1,5 +1,5 @@
 # TODO:
-#	- %makeinstall --> %{__make} install (Makefile need to be patched)
+#	- %%makeinstall --> %%{__make} install (Makefile need to be patched)
 #	- enable support for all possible features
 #	- external ffmpeg
 Summary:	GNOME TV viewer
